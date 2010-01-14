@@ -1,0 +1,62 @@
+<!-- 
+    Copyright © 2009,2010 Łukasz Rekucki
+
+    This file is part of WL2PDF
+
+    WL2PDF is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    WL2PDF is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with WL2PDF.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<configuration>
+
+<strict-configuration>true</strict-configuration>
+<base><!-- where fop-hyph.jar is ... --></base>
+<font-base><!-- where fonts and their metrics are --></font-base>
+
+<renderers>
+<renderer mime="application/pdf">
+<fonts>
+<font metrics-url="DejaVuSans-BoldOblique.ttf.xml" kerning="yes" embed-url="DejaVuSans-BoldOblique.ttf">
+	<font-triplet name="DejaVu Sans" style="italic" weight="bold"/>
+	</font>
+<font metrics-url="DejaVuSans-Bold.ttf.xml" kerning="yes" embed-url="DejaVuSans-Bold.ttf">
+	<font-triplet name="DejaVu Sans" style="normal" weight="bold"/>
+	</font>
+<font metrics-url="DejaVuSans-ExtraLight.ttf.xml" kerning="yes" embed-url="DejaVuSans-ExtraLight.ttf">
+	<font-triplet name="DejaVu Sans" style="normal" weight="200"/>
+	</font>
+<font metrics-url="DejaVuSans-Oblique.ttf.xml" kerning="yes" embed-url="DejaVuSans-Oblique.ttf">
+	<font-triplet name="DejaVu Sans" style="italic" weight="normal"/>
+	</font>
+<font metrics-url="DejaVuSans.ttf.xml" kerning="yes" embed-url="DejaVuSans.ttf">
+	<font-triplet name="DejaVu Sans" style="normal" weight="normal"/>
+	</font>
+
+<!-- SERIF -->
+<font metrics-url="DejaVuSerif-BoldItalic.ttf.xml" kerning="yes" embed-url="DejaVuSerif-BoldItalic.ttf">
+	<font-triplet name="DejaVu Serif" style="italic" weight="bold"/>
+	</font>
+<font metrics-url="DejaVuSerif-Bold.ttf.xml" kerning="yes" embed-url="DejaVuSerif-Bold.ttf">
+	<font-triplet name="DejaVu Serif" style="normal" weight="bold"/>
+	</font>
+<font metrics-url="DejaVuSerif-Italic.ttf.xml" kerning="yes" embed-url="DejaVuSerif-Italic.ttf">
+	<font-triplet name="DejaVu Serif" style="italic" weight="normal"/>
+	</font>
+<font metrics-url="DejaVuSerif.ttf.xml" kerning="yes" embed-url="DejaVuSerif.ttf">
+	<font-triplet name="DejaVu Serif" style="normal" weight="normal"/>
+	</font>
+</fonts>
+
+</renderer>
+</renderers>
+
+</configuration>

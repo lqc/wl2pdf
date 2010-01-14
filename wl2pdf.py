@@ -39,8 +39,7 @@ from net.sf.saxon.trans import XPathException
 
 from org.apache.fop.apps import *;
 
-RUNTIME_PATH = os.path.abspath(os.path.join(\
-        os.path.dirname(__file__), '..', 'runtime'))
+RUNTIME_PATH = os.path.abspath(os.path.dirname(__file__))
 
 CONFIG_PATH = os.path.join(RUNTIME_PATH, 'fop-config.xml')
 
@@ -110,7 +109,7 @@ def print_usage():
 Usage: book2pdf.py file [file...]"""
 
 if __name__ == '__main__':
-    print "WLML To PDF converter (c) 2009 Łukasz Rekucki. GPLv3 License."
+    print "WLML To PDF converter. Copyright © Łukasz Rekucki under GPLv3 License."
 
     if len(sys.argv) == 1:
         print_usage()

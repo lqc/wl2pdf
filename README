@@ -30,13 +30,34 @@
       - Apache FOP <http://xmlgraphics.apache.org/fop/index.html> 
           (at least version 0.95, trunk is recommended)
           
-     - Hyphenation is done via FOP, so read a section on it in their docs.
+      - XSLT 2.0 processor: Saxon9 <http://www.saxonica.com/index.html>          
+          
+      - Hyphenation is done via FOP, so read a section on it in their docs.
+           
+      - Some unicode-capable font, like DejaVu. 
+           
+    
+   CONFIGURING
+   -----------
+    
+     1) Compile FOP if needed.
+     2) Generate font metrics (refer to FOP Documentation on that)
+     3) Make a "fop-config.xml" out of the supplied example and place it in this directory.
      
-     - Some unicode-capable font, like DejaVu.   
-        
+     
+   RUNNING
+   -------
+   
+    With Jython:
     
+      jython wl2pdf <list_of_files_to_convert>
+      
+    With Java:
     
-    INSTALLING
-    ----------
+      java org.lqsoft.wlml.WL2PDF <path_to_config> <file_to_convert>
+    
+      (Rember to place FOP, it's libraries and Saxon under your classpath).      
+      
+   
     
     

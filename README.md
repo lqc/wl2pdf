@@ -39,10 +39,9 @@ Requirements
 Configuration
 -------------
     
-     1. Compile FOP if needed.
-     2. Generate font metrics (refer to FOP Documentation on that)
-     3. Make a "fop-config.xml" out of the supplied example and place it in this directory.
-     
+  1. Compile FOP if needed.
+  2. Generate font metrics (refer to FOP Documentation on that)
+  3. Make a "fop-config.xml" out of the supplied example and place it in this directory.    
      
 Running
 -------

@@ -1,4 +1,5 @@
 runtime/**
 test/wlml/**
+bin/**
 *.pdf
 .*
